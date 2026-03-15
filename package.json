@@ -1,9 +1,13 @@
 {
   "name": "swag-labs-playwright",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sauce Demo Automation Suite",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ci": "npx playwright install --with-deps && npx playwright test",
+    "report": "npx playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
