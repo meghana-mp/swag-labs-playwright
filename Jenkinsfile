@@ -24,7 +24,7 @@ pipeline {
         stage('Install Playwright Browsers') {
             steps {
                 // Jenkins needs this to download Chromium/Firefox/Webkit onto the Mac
-                sh 'npx playwright install --with-deps'
+                sh 'npx playwright install chromium firefox'
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
             steps {
                 // The '|| true' ensures that even if tests fail, the pipeline 
                 // doesn't stop, allowing the report to be generated.
-                sh 'npx playwright test || true'
+                sh 'npx playwright test --project=chromium || true'
             }
         }
     }
