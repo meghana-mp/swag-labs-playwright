@@ -1,0 +1,37 @@
+{
+  "loginScenarios": {
+    "standard": {
+      "user": "standard_user",
+      "pass": "secret_sauce"
+    },
+    "locked": {
+      "user": "locked_out_user",
+      "pass": "secret_sauce"
+    },
+    "invalid": {
+      "user": "invalid_user",
+      "pass": "wrong_password"
+    },
+    "emptyUser": {
+      "user": "",
+      "pass": "secret_sauce"
+    },
+    "emptyPass": {
+      "user": "standard_user",
+      "pass": ""
+    },
+    "visual": { "user": "visual_user", "pass": "secret_sauce" }
+  },
+  "inventoryData": {
+    "mainItem": "Sauce Labs Backpack",
+    "expectedCount": 6,
+    "lowPrice": "$7.99"
+  },
+  "shippingInfo": {
+    "firstName": "Meghana",
+    "lastName": "Automation",
+    "zipCode": "560001"
+  }
+
+}
+
